@@ -27,7 +27,7 @@ const WeatherDetailedPage: FC = () => {
   }
   return (
     <Grid sx={{ padding: '30px' }}>
-      <Link to="/" style={{ textDecoration: 'none' }}>
+      <Link to="/weather-app" style={{ textDecoration: 'none' }}>
         <Button variant="contained" color="warning" sx={{ mb: '20px' }}>
           Back to list
         </Button>

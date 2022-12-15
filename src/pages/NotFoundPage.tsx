@@ -9,7 +9,7 @@ const NotFoundPage: FC = () => {
         We're sorry, the page you requsted could not be found. Plase go back to
         homepage.
       </p>
-      <Link to="/">Go to homepage</Link>
+      <Link to="/weather-app">Go to homepage</Link>
     </div>
   );
 };
