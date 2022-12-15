@@ -145,6 +145,6 @@ it('should render MainInfo with given data', () => {
   expect(cityName).toBeTruthy();
   expect(celsius).toBeTruthy();
   expect(iconSrc).toBe(
-    `http://openweathermap.org/img/wn/${mock.list[0].weather[0].icon}.png`,
+    `https://openweathermap.org/img/wn/${mock.list[0].weather[0].icon}.png`,
   );
 });

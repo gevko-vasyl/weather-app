@@ -22,7 +22,7 @@ const MainInfo: FC<MainInfoProps> = ({ weather }) => {
         <img
           src={
             weather
-              ? `http://openweathermap.org/img/wn/${weather?.list[0]?.weather[0]?.icon}.png`
+              ? `https://openweathermap.org/img/wn/${weather?.list[0]?.weather[0]?.icon}.png`
               : ''
           }
           alt=""

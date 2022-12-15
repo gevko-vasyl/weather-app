@@ -40,7 +40,7 @@ const ForecastCarousel: FC<ForecastCarouselProps> = ({ weather }) => {
                   <img
                     src={
                       el
-                        ? `http://openweathermap.org/img/wn/${el?.weather[0]?.icon}.png`
+                        ? `https://openweathermap.org/img/wn/${el?.weather[0]?.icon}.png`
                         : ''
                     }
                     alt=""

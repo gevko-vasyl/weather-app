@@ -28,7 +28,7 @@ const AddCityDialog: FC = () => {
   const fetchCity = async (q: string) => {
     try {
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${process.env.REACT_APP_API_KEY}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${process.env.REACT_APP_API_KEY}`,
       );
 
       const isCityExist = cities.some(el => el.name === response.data.name);

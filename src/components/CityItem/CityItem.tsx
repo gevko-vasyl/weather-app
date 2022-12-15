@@ -26,7 +26,7 @@ const CityItem: FC<CityItemProps> = ({ city }) => {
   const updateCity = useCallback(async () => {
     try {
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city.name}&appid=${process.env.REACT_APP_API_KEY}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${city.name}&appid=${process.env.REACT_APP_API_KEY}`,
       );
 
       setCityState(response.data);
@@ -71,7 +71,7 @@ const CityItem: FC<CityItemProps> = ({ city }) => {
           >
             <Grid container alignItems="center" justifyContent="space-between">
               <img
-                src={`http://openweathermap.org/img/wn/${cityState?.weather[0]?.icon}.png`}
+                src={`https://openweathermap.org/img/wn/${cityState?.weather[0]?.icon}.png`}
                 alt=""
               />
               <Typography>{cityState?.weather[0]?.main}</Typography>

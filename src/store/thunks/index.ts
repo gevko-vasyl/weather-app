@@ -7,7 +7,7 @@ export const fetchCitiesWeather = createAsyncThunk(
     try {
       const citiesIdArrToString = ids.join(',');
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/group?id=${citiesIdArrToString}&appid=${process.env.REACT_APP_API_KEY}`,
+        `https://api.openweathermap.org/data/2.5/group?id=${citiesIdArrToString}&appid=${process.env.REACT_APP_API_KEY}`,
       );
 
       return response.data;
@@ -28,7 +28,7 @@ export const fetchCityDetailsAndForecast = createAsyncThunk(
   async (id: string, thunkAPI) => {
     try {
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/forecast?id=${id}&appid=${process.env.REACT_APP_API_KEY}`,
+        `https://api.openweathermap.org/data/2.5/forecast?id=${id}&appid=${process.env.REACT_APP_API_KEY}`,
       );
 
       return response.data;

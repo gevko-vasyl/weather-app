@@ -140,6 +140,6 @@ it('should render ForecastCarousel with given data', () => {
   const iconSrc = screen.getAllByRole('img')[0].getAttribute('src');
   expect(celsius).toBeTruthy();
   expect(iconSrc).toBe(
-    `http://openweathermap.org/img/wn/${mock.list[0].weather[0].icon}.png`,
+    `https://openweathermap.org/img/wn/${mock.list[0].weather[0].icon}.png`,
   );
 });
